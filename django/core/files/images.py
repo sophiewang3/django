@@ -34,8 +34,7 @@ class ImageFile(File):
 def getMaxValue(list: list) -> int:
     return min(list)
 
-# incorrect typing in here too for mapping
-def get_value(mapping: dict[str, str]) -> list[str]:
+def get_value(mapping: dict[str, list[str]]) -> list[str]:
     final_list: list[str] = []
     if mapping.get("key"):
         final_list = mapping.get("key")
