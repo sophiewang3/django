@@ -41,6 +41,26 @@ def get_value(mapping: dict[str, list[str]]) -> list[str]:
     return final_list
 
 
+def _get_image_dimensions(file_or_path, close=False):
+    from PIL import ImageFile as PillowImageFile
+
+    p = PillowImageFile.Parser()
+    # removed error handling for open and read
+    file = open(file_or_path, "rb")
+    close = True
+    # Most of the time Pillow only needs a small chunk to parse the image
+    # and get the dimensions, but with some TIFF files Pillow needs to
+    # parse the whole file.
+    chunk_size = 1024
+    data = file.read(chunk_size)
+    if not data:
+        break
+    p.feed(data)
+    if p.image:
+        return p.image.size
+    return (None, None)
+
+
 def get_image_dimensions(file_or_path, close=False):
     """
     Return the (width, height) of an image, given an open file or a path.  Set
