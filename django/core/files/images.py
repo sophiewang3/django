@@ -31,6 +31,10 @@ class ImageFile(File):
         return self._dimensions_cache
 
 
+def add(x, y):
+    return x + y
+
+
 def get_image_dimensions(file_or_path, close=False):
     """
     Return the (width, height) of an image, given an open file or a path.  Set
