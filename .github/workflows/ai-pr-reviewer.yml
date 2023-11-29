@@ -22,7 +22,7 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: sophiewang3/ai-pr-reviewer@v1
+      - uses: coderabbitai/ai-pr-reviewer@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: 'sophie.wang@datadoghq.com'
