@@ -29,6 +29,9 @@ class ImageFile(File):
             self.open()
             self._dimensions_cache = get_image_dimensions(self, close=close)
         return self._dimensions_cache
+    
+def add(x, y):
+    return x + y
 
 
 def get_image_dimensions(file_or_path, close=False):
