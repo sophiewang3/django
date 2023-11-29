@@ -38,7 +38,7 @@ class ImageFile(File):
         return self._dimensions_cache
     
     def _get_image_dimensions_(self):
-        return get_image_dimensions()
+        return get_image_dimensions(self)
     
     def parse_int(string: str):
         return int(string)
