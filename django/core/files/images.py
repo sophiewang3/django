@@ -34,6 +34,9 @@ class ImageFile(File):
 def add(x, y):
     return x + y
 
+def multiple(x, y):
+    return x * y
+
 
 def get_image_dimensions(file_or_path, close=False):
     """
