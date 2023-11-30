@@ -42,6 +42,7 @@ class Bundle:
         return True
 
 
+
 class ServiceCatalogConfigService(object):
     @retry((ServiceCatalogAPIError, Timeout), tries=5, delay=5, backoff=1)
     def get_service_catalog_enrichment(self, org_id: int) -> ServiceCatalogEnrichmentByService:
