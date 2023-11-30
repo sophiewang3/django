@@ -46,6 +46,7 @@ jobs:
                 - Complexity
                 - Optimization
                 - Best practices: DRY, SOLID, KISS
-            Ensure all variables and parameters have correct typing. Provide specific
-            suggestions to improve code readability. Suggest making magic numbers
-            configurable. Make sure every code path has an explicit return case.
+            Also suggest code snippets for the following:
+                - Ensure all variables and parameters have correct typing.
+                - Provide specific suggestions to improve code readability.
+                - Suggest making magic numbers configurable.
