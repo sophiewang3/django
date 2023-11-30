@@ -30,4 +30,3 @@ jobs:
           debug: true
           review_simple_changes: true
           review_comment_lgtm: false
-          openai_base_url: 'https://openai-api-proxy.us1.staging.dog/v1'
