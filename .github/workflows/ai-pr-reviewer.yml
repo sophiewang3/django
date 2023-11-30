@@ -48,6 +48,6 @@ jobs:
                 - Best practices: DRY, SOLID, KISS
             Also check the following questions. For each, if the answer is no,
             provide code snippets to fix the issues.
-                - Do all variables and parameters have correct typing?
+                - Do all variables and parameters have correct typing annotations?
                 - Are there specific suggestions you can provide to improve code readability?
                 - Are there magic numbers that should be configurable?
