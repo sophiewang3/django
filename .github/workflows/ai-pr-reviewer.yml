@@ -46,7 +46,8 @@ jobs:
                 - Complexity
                 - Optimization
                 - Best practices: DRY, SOLID, KISS
-            Also suggest code snippets for the following:
-                - Ensure all variables and parameters have correct typing.
-                - Provide specific suggestions to improve code readability.
-                - Suggest making magic numbers configurable.
+            Also check the following questions. For each, if the answer is no,
+            provide code snippets to fix the issues.
+                - Do all variables and parameters have correct typing?
+                - Are there specific suggestions you can provide to improve code readability?
+                - Are there magic numbers that should be configurable?
