@@ -29,9 +29,20 @@ class ImageFile(File):
             self.open()
             self._dimensions_cache = get_image_dimensions(self, close=close)
         return self._dimensions_cache
+    
+
+def do_nothing(file_string: int):
+    from typing import Optional
+    # testing bad variable naming and incorrect / outdated typing.
+    # this is spelled incorectlyy
+    integer1 = "not an integer"
+    none: Optional[int] = None
+    if none is None:
+        return integer1
+    # should return something here
 
 
-def get_image_dimensions(file_or_path, close=False):
+def get_image_dimensions(file_or_path: int, close=False):
     """
     Return the (width, height) of an image, given an open file or a path.  Set
     'close' to True to close the file at the end if it is initially in an open
